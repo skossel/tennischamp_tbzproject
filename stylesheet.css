@@ -1,0 +1,497 @@
+body {
+    font-family: Verdana;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    justify-content: space-between;
+    padding: 10px 20px;
+    background: #fffacd;
+    align-items: center;
+    display: flex;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.logo {
+    height: 70px;
+}
+
+.navbar {
+    display: flex;
+    gap: 40px;
+    margin-right: 100px;
+}
+
+.navbar a {
+    color: #333333;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: gray;
+}
+
+/* welcome section */
+
+.container {
+    background-color: burlywood;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    text-align: center;
+    margin: 30px auto 0;
+}
+
+.container h1 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.container p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.titelbild {
+    width: 100%;
+    overflow: hidden;
+    max-height: 300px;
+    border-radius: 10px;
+}
+
+.titelbild img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* ranking table */
+
+.rankVorschau {
+    max-width: 800px;
+    background-color: #DCDCDC;
+    padding: 10px;
+    margin: 30px auto 0;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.grid-table {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.grid-table > div.table-header {
+    font-weight: bold;
+    background-color: #ffd700;
+    color: white;
+}
+
+.grid-table > div {
+    background-color: #f8f9fa;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.button-rankList {
+    background-color: #f0f465;
+    color: black;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+/* Footer */
+
+.footer-section {
+    margin-top: 20px;
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-box {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-splitWidth {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-textBox, .footer-contact, .footer-socialMedia {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.footer-rights {
+    margin-top: 20px;
+}
+
+/* about Us */
+
+.aboutUs-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.aboutUs-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.aboutUs-header img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.aboutUs-header h1 {
+    margin: 10px 0;
+    font-size: 2.5em;
+}
+
+.aboutUs-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.aboutUs-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.aboutUs-info div {
+    flex: 1;
+    padding: 10px;
+}
+
+.aboutUs-info div:first-child {
+    margin-right: 10px;
+}
+
+/* LogIn Button */
+/* Allgemeine Form-Stile */
+.form-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.formElements {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.formElements label {
+    flex: 1;
+    margin-right: 10px;
+    color: #333;
+    font-weight: bold;
+}
+
+.formElements input,
+.formElements select {
+    flex: 2;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.formElements input:focus,
+.formElements select:focus {
+    border-color: #66afe9;
+    outline: none;
+    box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+.formElements input[type="checkbox"] {
+    width: auto;
+    margin-left: 10px;
+}
+
+.submit-button {
+    background-color: #ede080;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.submit-button:hover {
+    background-color: #e3b313;
+}
+
+/* LogIn Button */
+.logIn {
+    background-color: #f0e68c;
+    border-radius: 100px;
+    box-shadow: rgba(204, 153, 0, 0.2) 0 -25px 18px -14px inset,
+    rgba(204, 153, 0, 0.15) 0 1px 2px,
+    rgba(204, 153, 0, 0.15) 0 2px 4px,
+    rgba(204, 153, 0, 0.15) 0 4px 8px,
+    rgba(204, 153, 0, 0.15) 0 8px 16px,
+    rgba(204, 153, 0, 0.15) 0 16px 32px;
+    color: #8b8000;
+    cursor: pointer;
+    display: inline-block;
+    font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    font-size: 16px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.logIn:hover {
+    box-shadow: rgba(204, 153, 0, 0.35) 0 -25px 18px -14px inset,
+    rgba(204, 153, 0, 0.25) 0 1px 2px,
+    rgba(204, 153, 0, 0.25) 0 2px 4px,
+    rgba(204, 153, 0, 0.25) 0 4px 8px,
+    rgba(204, 153, 0, 0.25) 0 8px 16px,
+    rgba(204, 153, 0, 0.25) 0 16px 32px;
+    transform: scale(1.05) rotate(-1deg);
+}
+
+/* LogIn Form */
+#logInForm {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+#logInForm label {
+    margin-bottom: 8px;
+    color: #333;
+    display: block;
+    font-weight: bold;
+}
+
+/* LogIn Form Inputs */
+#logInForm_username,
+#logInForm_email,
+#logInForm_password {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+#logInForm_username:focus,
+#logInForm_email:focus,
+#logInForm_password:focus {
+    border-color: #66afe9;
+    outline: none;
+    box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+#logInForm_username::placeholder,
+#logInForm_password::placeholder,
+#logInForm_email::placeholder {
+    color: #999;
+}
+
+/* Submit Button */
+.logInForm_submit {
+    background-color: #ede080;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.logInForm_submit:hover {
+    background-color: #e3b313;
+}
+
+/* Success registration page */
+
+.confirmation-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.confirmation-container h1 {
+    color: #333;
+}
+
+.confirmation-container p {
+    font-size: 18px;
+    color: #555;
+}
+
+.button-rankList {
+    background-color: #ede080;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+.button-rankList:hover {
+    background-color: #e3b313;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        margin-right: 0;
+        gap: 20px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .grid-table {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-splitWidth {
+        flex-direction: column;
+    }
+
+    .aboutUs-info {
+        flex-direction: column;
+    }
+
+    .formElements {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .formElements label,
+    .formElements input,
+    .formElements select {
+        width: 100%;
+        margin: 0 0 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .logo {
+        height: 50px;
+    }
+
+    .navbar {
+        gap: 10px;
+    }
+
+    .container,
+    .rankVorschau,
+    .aboutUs-container,
+    .form-container,
+    #logInForm,
+    .confirmation-container {
+        padding: 10px;
+        margin: 20px auto;
+    }
+
+    .container h1 {
+        font-size: 1.5em;
+    }
+
+    .container p,
+    .confirmation-container p {
+        font-size: 16px;
+    }
+
+    .buttons {
+        gap: 10px;
+    }
+}
+
+.responsive-video {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+}
+
+.responsive-video video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+}
